@@ -8,7 +8,7 @@ exports.check = async (req, res) => {
         console.log(positionInfo)
         var text = positionInfo.text+"\n"
         const fs = require('fs');
-    fs.appendFile("F:/New folder(4)/server/get-trade-info/internal_server_info.txt", text, function (err) {
+    fs.appendFile("internal_server_info.txt", text, function (err) {
         if (err) {
             console.log(111111111)
         }
