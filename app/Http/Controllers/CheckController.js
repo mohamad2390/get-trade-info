@@ -5,7 +5,6 @@ exports.check = async (req, res) => {
     const positionInfo = req.body;
     try {
         
-        console.log(positionInfo)
         var text = positionInfo.text+"\n"
         const fs = require('fs');
     // fs.appendFile("internal_server_info.txt", text, function (err) {

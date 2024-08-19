@@ -24,6 +24,11 @@ http.listen(port_number, function () {
     console.log(clr.green('server is runnig on *' + port_number));
 });
 
+app.get('/download', function (req, res) {
+    const file = `${__dirname}/internal_server_info.txt`;
+    res.download(file);
+});
+
 const baseRout = require('./routes/router');
 
 app.use('/api', baseRout);
