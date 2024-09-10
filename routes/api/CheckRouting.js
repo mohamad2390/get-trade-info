@@ -77,7 +77,7 @@ const CheckController = require('../../app/Http/Controllers/CheckController');
  *           schema:
  *             type: object
  *             properties:
- *               userName:
+ *               text:
  *                 type: string
  *                 description: The user's phone number or email.
  *                 example: '09136988094'

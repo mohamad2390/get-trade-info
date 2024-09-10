@@ -12,10 +12,11 @@ exports.check = async (req, res) => {
     //         console.log(111111111)
     //     }
     // });
-    fs.writeFile("internal_server_info.txt", text, function(){console.log('done')})
+    fs.writeFile("internal_server_info.txt", text, function(){})
     res.status(200).send('ok').end();
         
     } catch (error) {
         console.log(error)
+        res.status(400).send('err').end();
     }
 }
